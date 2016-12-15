@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditTextPreference
+        android:defaultValue="@string/pref_header_city_default"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_header_city_title"
+        android:key="@string/pref_header_city_key" />
+
+    <ListPreference
+        android:key="@string/pref_header_unit_key"
+        android:title="@string/pref_header_unit_title"
+        android:defaultValue="@string/pref_header_unit_default"
+        android:entries="@array/pref_header_unit_entries"
+        android:entryValues="@array/pref_header_unit_values" />
+
+</PreferenceScreen>
